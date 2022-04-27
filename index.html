@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="chiefslider.css">
+    <title>Школа</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="">Информация</a>
+            <a href=""><img src="images/Ellipse1.svg" alt="school-logo"></a>
+            <a href="">Вакансии</a>
+        </div>
+    </header>
+    <main>
+        <div class="school-main">
+            <h1>Пройдите тест на проверку <br> компетентности в роли учителя!</h1>
+            <a class="bottom1" href="">Перейти к тесту</a>
+        </div>
+
+        <div class="infocompet container">
+            <div class="info">
+                <h1>
+                    Зачем нужно проходить тест на компетентность?
+                </h1>
+                <ul>
+                    <li>Наш тест сделан для более простого понимания, насколько кондидат подходит на должность учителя
+                    </li>
+                    <li>С помощью теста вы сможете не тратить время на собеседование</li>
+                    <li>Моментальные результаты теста</li>
+                    <li>Простые вопросы- простые ответы</li>
+                </ul>
+            </div>
+            <div class="image1">
+                <img src="images/Rectangle13.jpg" alt="notebookinfo">
+            </div>
+        </div>
+
+        <div class="testinform container">
+            <div class="testinfo">
+                <h1>
+                    У нас есть тесты для учителей информатики!
+                </h1>
+                <p>
+                    У нас так же вы сможете пройти отдельный тест для кондидатов на должность учителя информатики
+                </p>
+
+                <p>
+                    Этот тест отличается от основного теста, так как уроки у учителя информатики проходят иначе, нежели
+                    уроки других преподователей
+                </p>
+
+                <a class="bottom2" href="#">Начать</a>
+            </div>
+            <div class="image2">
+                <img src="images/Rectangle3.jpg" alt="">
+            </div>
+        </div>
+        <div class="our-school container">
+            <div class="school-info">
+                <h1>
+                    Наша школа
+                </h1>
+                <p>В нашей Гимназии №43 очень дружный коллектив. Так же у нас проводится очень много мероприятий для
+                    сплочения учеников и учителей.
+                </p>
+                <div class="social">
+                    <p>
+                        Вы можете посмотреть больше информации о нашей школе через соц.сети.
+                    </p>
+                    <a href="#"><img src="images/mail.svg" alt="school-mail"></a>
+                    <a href="#"><img src="images/facebook.svg" alt="school-facebook"></a>
+                    <a href="#"><img src="images/instagram.svg" alt="school-insta"></a>
+                    <a href="#"><img src="images/youtube.svg" alt="school-yt"></a>
+                </div>
+            </div>
+            <div class="slider2">
+                <div class="slider" data-slider="chiefslider">
+                    <div class="slider__container">
+                        <div class="slider__wrapper">
+                            <div class="slider__items">
+                                <div class="slider__item">
+                                    <div class="slider__item-container">
+                                        <div class="slider__item-content"><img src="images/Rectangle8.jpg" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="slider__item-container">
+                                        <div class="slider__item-content"><img src="images/Rectangle14.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="slider__item-container">
+                                        <div class="slider__item-content"><img src="images/Rectangle8.jpg" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="slider__item-container">
+                                        <div class="slider__item-content"><img src="images/Rectangle14.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="slider__item-container">
+                                        <div class="slider__item-content"><img src="images/Rectangle8.jpg" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="slider__control" data-slide="prev"></a>
+                    <a href="#" class="slider__control" data-slide="next"></a>
+                    <!-- <ol class="slider__indicators">
+                        <li data-slide-to="0"></li>
+                        <li data-slide-to="1"></li>
+                        <li data-slide-to="2"></li>
+                        <li data-slide-to="3"></li>
+                        <li data-slide-to="4"></li>
+                    </ol> -->
+                </div>
+
+            </div>
+
+            <script src="chiefslider.js"></script>
+
+            <script>
+                const $slider = document.querySelector('[data-slider="chiefslider"]');
+                const slider = new ChiefSlider($slider, {
+                    loop: true,
+                    autoplay: true,
+                    interval: 5000,
+                });
+            </script>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <a class="school-logo" href="#"><img src="images/Ellipse1.svg" alt="school-logo"></a>
+            <p>Гимназия №43</p>
+            <div class="white-school-social">
+                <a href="#"><img src="images/mail-white.svg" alt="white-mail-school"></a>
+                <a href="#"><img src="images/facebook-white.svg" alt="white-fb-school"></a>
+                <a href="#"><img src="images/instagram-white.svg" alt="white-insta-school"></a>
+                <a href="#"><img src="images/youtube-white.svg" alt="white-yt-school"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
