@@ -186,14 +186,106 @@ footer p{
     padding-left: 81px;
 }
 
-.school-logo{
-    padding-left: 80px;
-}
-
-.white-school-social{
-    padding-top: 78px;
-}
-
 .white-school-social a{
     margin-left: 11px;
+} 
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footlogo{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1100px){
+    .container{
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 768px){
+    .school-main{
+        background-position: right;
+    }
+    .our-school{
+        flex-wrap: wrap;
+        padding-top: 100px;
+    }
+    .school-info{
+        width: 100%;
+    }
+    .slider2{
+        width: 100%;
+        padding-top: 25px;
+    }
+}
+
+@media (max-width: 730px){
+    .infocompet{
+        flex-wrap: wrap;
+    }
+    .image1, .info{
+        padding-top: 65px;
+        width: 70%;
+        margin: auto;
+    }
+    .testinform{
+        flex-wrap: wrap;
+        padding-top: 100px;
+    }
+    .image2, .testinfo{
+        padding-top: 65px;
+        width: 70%;
+        margin: auto;
+    }
+    .school-info, .slider2{
+        width: 70%;
+        margin: auto;
+    }
+    footer{
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 450px){
+    .bottom1{
+        padding: 21px 102px;
+    }
+}
+
+@media (max-width: 440px){
+    .bottom2{
+        padding: 21px 107px;
+    }
+
+    footer p{
+        padding-left: 25px;
+    }
+    .school-info, .slider2, .image2, .testinfo, .image1, .info{
+        width: 100%;
+    }
+
+    footer .container{
+        flex-wrap: wrap;
+    }
+    .social{
+        width: 100%;
+    }
+    .school-main{
+        padding: 70px 0px;
+    }
+    .school-main h1{
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+
+@media (max-width: 385px){
+    .bottom1{
+        padding: 15px 50px;
+    }
 }
